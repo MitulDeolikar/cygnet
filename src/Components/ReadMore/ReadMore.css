@@ -1,0 +1,30 @@
+/* ReadMore.css */
+
+.read-more {
+    padding: 20px; /* Add padding for spacing */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    margin: 20px auto 10px auto; /* Center the box horizontally */
+    width: 89%;
+    background-color: #dadada;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    position: relative;
+    box-shadow: 0px 0px 10px 3px #cdcbcb;
+}
+
+.read-more-content {
+    max-width: 800px; /* Limit the width of the content */
+    text-align: left; /* Align text to the left */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.read-more p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.read-more h2 {
+    color: rgb(62, 62, 62);
+    font-size: 28px;
+}

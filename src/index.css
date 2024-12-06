@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #2abbff, #0065ff, #8742fe);
+  animation: gradientAnimation 10s infinite;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, #1ac3fd, #3166b5);
+  }
+
+  20% {
+    background: linear-gradient(135deg, #1ac3fd, #3166b5);
+  }
+
+  20% {
+    background: linear-gradient(135deg, #3166b5, #1ac3fd);
+  }
+
+  40% {
+    background: linear-gradient(135deg, #3166b5, #1ac3fd);
+  }
+
+  60% {
+    background: linear-gradient(135deg, #1ac3fd, #3166b5);
+  }
+
+  80% {
+    background: linear-gradient(135deg, #1ac3fd, #3166b5);
+  }
+
+  100% {
+    background: linear-gradient(135deg, #3166b5, #1ac3fd);
+  }
+}
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Navbar.css */
+
+/* Styles for scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #848485;
+  /* Color of the scrollbar thumb */
+  border-radius: 5px;
+  /* Border radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+  /* Color of the scrollbar thumb on hover */
 }

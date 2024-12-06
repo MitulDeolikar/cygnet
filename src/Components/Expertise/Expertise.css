@@ -1,0 +1,16 @@
+.expertise-container {
+    padding: 20px;
+    margin: 45px;
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Optional: Center the content vertically (if needed) */
+  }
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Defines 3 columns of equal width */
+    grid-gap: 60px; /* Adds spacing between cards */
+  }
+  .card-item img{
+    height: 40px;
+  }

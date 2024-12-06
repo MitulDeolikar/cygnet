@@ -1,0 +1,102 @@
+/* About.css */
+h1 {
+    margin: auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Adjust alignment */
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 100px;
+    background-color: #dadada;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 89%;
+    /* Shadow with spread radius */
+    box-shadow: 0px 0px 10px 3px #cdcbcb;
+}
+
+.left-paragraph,
+.right-paragraph {
+    flex: 1;
+    justify-content: center;
+}
+
+.left-paragraph {
+    margin-right: 20px;
+}
+
+.right-paragraph {
+    margin-left: 20px;
+}
+
+.about-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c01d4;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+span {
+    color: rgb(56, 56, 56);
+}
+
+.left-paragraph img {
+
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .left-paragraph, .right-paragraph {
+        margin: 10px;
+        width: 100%; /* Ensure paragraphs take full width */
+        text-align: center; /* Center align text */
+        margin: 0; /* Reset margins */
+        padding: 0 20px; /* Add padding to ensure text isn't too close to the edges */
+    }
+
+    .left-paragraph img {
+        margin: 10px;
+        margin: 0 auto; /* Center image horizontally */
+    }
+}
+
+@media (max-width: 650px) {
+    .left-paragraph img {
+        width: 50%; /* Reduce size to 50% of the container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Make it a circle */
+    }
+
+    .left-paragraph, .right-paragraph {
+        margin: 10px;
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+@media (max-width: 460px) {
+    .about-container p{
+        font-size: 13px;
+    }
+    .about-container h2{
+        font-size: 18px;
+    }
+}

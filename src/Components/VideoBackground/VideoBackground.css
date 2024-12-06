@@ -1,0 +1,20 @@
+.video-background {
+    margin: auto;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video cover the entire width of the screen */
+    height: 100%; /* Make the video cover the entire height of the screen */
+    z-index: -1; /* Place the video behind other content */
+    display: flex; /* Use flexbox to center the video */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
+  }
+  
+  .video-background video {
+    max-width: 110%; /* Set maximum width to prevent the video from overflowing */
+    max-height: 110%; /* Set maximum height to prevent the video from overflowing */
+  }
+  

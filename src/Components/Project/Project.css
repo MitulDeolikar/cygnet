@@ -1,0 +1,45 @@
+/* Project.css */
+
+.project-container {
+    padding: 20px;
+    margin: 45px;
+    display: flex;
+    flex-direction: column; /* Display project cards and button in a column */
+    align-items: center;
+}
+
+.project-container .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+
+.add-project-btn {
+    margin-top: auto; /* Push the button to the bottom */
+    padding: 8px 16px; /* Reduce padding for smaller button */
+    font-size: 14px; /* Reduce font size for smaller button */
+    background-color: #4c4c4c;
+    color: rgb(251, 248, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .project-container .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        grid-gap: 30px;
+    }
+}
+@media (max-width: 650px) {
+    .project-container .card-grid {
+        grid-gap:15px;
+        padding: 15px;
+    }
+}
+@media (max-width: 610px) {
+    .project-container .card-grid {
+        grid-template-columns: repeat(1, 1fr); /* 2 cards per row */
+        grid-gap: 20px;
+    }
+}
